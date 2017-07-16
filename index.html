@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>TextEncoder and TextDecoder</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="head">
+      <h1>Text Encoder and Decoder Demo</h1>
+      <p>
+        This is a demo built to present the function of 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder" class="ref-link">TextEncoder</a> and 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder" class="ref-link">TextDecoder</a> made 
+        to easily Encode the stream of Code points into stream of bytes and decoded the stream
+        of bytes into stream of code points. This is a simple to use Encoding and Decoding application which allows to
+        convert from the supported encodings.
+      </p>
+
+      <div class="related-docs">
+        <p>
+          Related MDN Docs
+        </p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder">TextEncoder</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder">TextDecoder</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/TextDecoder/encoding">Supported encodings for TextDecoder</a></p>
+      </div>
+      <a href="https://developer.mozilla.org">
+        <img class="mdn-banner" src="https://mdn.mozillademos.org/files/7093/MDN_promoBanner_120x120px.png" alt="Mozilla Developer Network Banner">        
+      </a>
+    </div>
+    <div class="not-supported" style="display:none;">
+      <h3>Not Supported!</h3>
+      TextEncoder and TextDecoder are not supported in your environment. Please open 
+      this in a browser like Mozilla Firefox, Chrome or Opera. As of the time this demo was made,
+      these interfaces are not supported in Internet Explorer and Microsoft Edge.
+    </div>
+    <div class="demo">
+      <div class="encoder demo-card">
+        <h2>TextEncoder Demo</h2>
+        <p>
+          TextEncoder takes a stream of code points and emits a stream of bytes.
+          You can encode any string value and the output of this will be an encoded stream of 
+          Uint8Array you can use within applications. The output can be pasted into the decoder
+          to get the decoded string back, given the encoding matches.
+        </p>
+        <textarea placeholder="String to encode such as 'Quick brown fox jumps over the lazy hoomans'"></textarea>
+        <input type="text" class="encoding" value="utf-8" placeholder="Enter a supported encoding here">
+        <div class="encoder-output">
+          <h3>Output</h3>
+          <p class="output-container">Encoded Output or any error will appear here</p>
+        </div>
+        <div class="submit">
+          <button id="encode-btn">Encode</button>
+        </div>
+      </div>
+      <div class="decoder demo-card">
+        <h2>Decoder Demo</h2>
+        <p>
+          TextDecoder decodes the stream of bytes in a Uint8Array to stream of code points, output is returned as a string. 
+          The default encoding is the most common one used in JS world known as <code>utf-8</code>.</br>
+          The input here accepts a comma separated string, of byte values that needs to be converted.
+
+          An array formatted value with square brackets at the sides is considered valid value to
+          use, as the values are extracted. Read mo
+          re about the TextDecoder and performance
+          gains using it, from related links above.
+        </p>
+        <textarea id="" cols="30" rows="10"></textarea>
+        <input type="text" class="encoding" value="utf-8" placeholder="Enter a supported encoding here">        
+        <div class="decoder-output">
+          <h3>Output</h3>
+          <p class="output-container">Decoded Output or any error will appear here</p>
+        </div>
+        <div class="submit">
+          <button>Decode</button>
+        </div>
+      </div>
+    </div>
+    <noscript>JavaScript is not supported, please enable JavaScript to run this demo.</noscript>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

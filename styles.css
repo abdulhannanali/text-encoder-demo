@@ -1,0 +1,94 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+
+.ref-link {
+  color: palegreen;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.head {
+  padding: 20px;
+  background-color: coral;
+  color: white;
+}
+
+.demo {
+  padding: 10px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 1px silver solid;
+  box-shadow: 4px 4px 4px #e9e9e9;
+}
+
+.encoder-submit {
+  margin-top: 20px;
+}
+
+.submit button {
+  padding: 20px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  border: none;
+  font-family: monospace;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.mdn-banner {
+  height: 80px;
+}
+
+.related-docs a {
+  text-decoration: none;
+  color: palegreen;
+  font-weight: 600;
+}
+
+.output-container {
+  padding: 5px;
+  background-color: #e9e9e9;
+  max-width: 500px;
+  min-height: 10px;
+  word-wrap: break-word;
+}
+
+input {
+  font-family: Courier New, Courier, monospace;
+}
+
+input:focus {
+  border: 3px green solid;
+}
+
+input.encoding {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px #e9e9e9 solid;
+}
+
+.not-supported h3 {
+  color: red;
+  font-size: 24px;
+  border-bottom: 1px #e9e9e9 solid;
+  line-height: 5px;
+}
+
+.not-supported {
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+}
+
+.demo-card {
+  margin: 30px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px silver;
+}
